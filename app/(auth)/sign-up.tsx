@@ -85,11 +85,11 @@ export default function SignUp() {
 					<View className="items-center justify-center">
 						<Image source={images.Logo} className="h-40 w-40" />
 						<Text className="text-3xl text-center text-primary font-bold">
-							Hello, Friend!
+							Create Account
 						</Text>
 
 						<Text className="text-base text-center text-accent mt-2 font-bold">
-							Create an account to get started
+							Join us and start your journey!
 						</Text>
 					</View>
 					<InputField
@@ -132,7 +132,6 @@ export default function SignUp() {
 					</Text>
 					<CustomButton
 						handlePress={handleSubmit}
-						textStyles=""
 						title="Sign Up"
 						disable={disable || isSubmit}
 						containerStyles="mt-10 "

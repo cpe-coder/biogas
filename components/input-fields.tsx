@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-import { icon } from "@/constant/icon";
+import { icon } from "@/constant/icons";
 
 interface FormFieldProps {
 	title: string;
@@ -33,7 +33,7 @@ const InputField: React.FC<FormFieldProps> = ({
 				className={`w-full h-14 px-4 bg-black-100 rounded-xl border  border-primary  focus:border-primary flex flex-row items-center ${borderStyle} `}
 			>
 				<TextInput
-					className="flex-1 text-accent font-semibold text-base"
+					className="flex-1 text-gray-500 font-semibold text-base"
 					value={value}
 					placeholder={placeholder}
 					placeholderTextColor="#556270"

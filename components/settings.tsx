@@ -1,4 +1,4 @@
-import { icon } from "@/constant/icon";
+import { icon } from "@/constant/icons";
 import { useAuth } from "@/context/auth-context";
 import Entypo from "@expo/vector-icons/Entypo";
 import Ionicons from "@expo/vector-icons/Ionicons";

@@ -75,11 +75,11 @@ export default function SignIn() {
 					<View className="items-center justify-center">
 						<Image source={images.Logo} className="h-40 w-40" />
 						<Text className="text-3xl text-center text-primary font-bold">
-							Welcome Back!
+							Login to Biogas
 						</Text>
 
 						<Text className="text-base text-center text-accent mt-2 font-bold">
-							Sign In to your account to continue
+							Welcome back! Please login to your account.
 						</Text>
 					</View>
 
@@ -116,7 +116,6 @@ export default function SignIn() {
 
 					<CustomButton
 						title="Login"
-						textStyles=""
 						handlePress={handleLogin}
 						submitting={isSubmit || isSubmit}
 						containerStyles="mt-10"
