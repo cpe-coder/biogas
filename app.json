@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.cpecoder.biogas"
     },
     "web": {
       "output": "static",
@@ -50,6 +51,7 @@
       "eas": {
         "projectId": "77143a73-f3e3-4dac-9469-cc0f54c4ace7"
       }
-    }
+    },
+    "owner": "cpecoder"
   }
 }
