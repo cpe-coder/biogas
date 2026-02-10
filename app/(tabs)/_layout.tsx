@@ -1,4 +1,3 @@
-import { Settings } from "@/components";
 import { useAuth } from "@/context/auth-context";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
@@ -26,24 +25,22 @@ export default function TabLayout() {
 					borderTopWidth: 0,
 				},
 				tabBarInactiveTintColor: "#374151",
-				tabBarActiveTintColor: "#ff8903",
+				tabBarActiveTintColor: "#1E40AF",
 			}}
 		>
 			<Tabs.Screen
 				name="Home"
 				options={{
 					title: "Home",
-
-					headerRight: () => {
-						return <Settings />;
+					headerStyle: {
+						backgroundColor: "#fff",
 					},
-					headerStyle: { backgroundColor: "#fff" },
-					headerTintColor: "#ff8903",
+					headerTintColor: "#1E40AF",
 					tabBarIcon: ({ focused }) => (
 						<FontAwesome6
 							name="house"
 							size={24}
-							color={focused ? "#ff8903" : "#374151"}
+							color={focused ? "#1E40AF" : "#374151"}
 							focusable={focused}
 						/>
 					),
@@ -54,16 +51,31 @@ export default function TabLayout() {
 				name="Logs"
 				options={{
 					title: "Logs",
-					headerRight: () => {
-						return <Settings />;
-					},
-					headerStyle: { backgroundColor: "#fff" },
-					headerTintColor: "#ff8903",
+
+					headerStyle: { backgroundColor: "60A5FA" },
+					headerTintColor: "#1E40AF",
 					tabBarIcon: ({ focused }) => (
 						<MaterialIcons
 							name="article"
 							size={28}
-							color={focused ? "#ff8903" : "#374151"}
+							color={focused ? "#1E40AF" : "#374151"}
+							focusable={focused}
+						/>
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="Settings"
+				options={{
+					title: "Settings",
+
+					headerStyle: { backgroundColor: "#fff" },
+					headerTintColor: "#1E40AF",
+					tabBarIcon: ({ focused }) => (
+						<MaterialIcons
+							name="settings"
+							size={28}
+							color={focused ? "#1E40AF" : "#374151"}
 							focusable={focused}
 						/>
 					),

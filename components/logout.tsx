@@ -1,7 +1,6 @@
 import { useAuth } from "@/context/auth-context";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
-import Settings from "./settings";
 
 const Logout = () => {
 	const { onLogout } = useAuth();
@@ -13,7 +12,6 @@ const Logout = () => {
 			>
 				<Text className="text-center text-white items-center">Logout</Text>
 			</Pressable>
-			<Settings />
 		</View>
 	);
 };
