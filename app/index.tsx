@@ -17,15 +17,15 @@ export default function Welcome() {
 	}, [router]);
 
 	return (
-		<View className="flex-1 items-center justify-centerpx-8 bg-primary">
-			<View className="flex flex-col gap-4 justify-center items-center bg-green-100 pr-1 pt-1 rounded-full">
+		<View className="flex-1 items-center justify-center px-8 bg-primary">
+			<View className="flex flex-col justify-center items-center rounded-full">
 				<Image
 					className="w-[150px] h-[150px]"
 					source={images.Logo}
 					resizeMode="contain"
 				/>
 			</View>
-			<Text className="font-bold text-xl text-[#fff] mt-10">AutoTrak</Text>
+			<Text className="font-bold text-xl text-[#fff] mt-2">Biogas Mobile</Text>
 		</View>
 	);
 }

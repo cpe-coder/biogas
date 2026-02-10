@@ -12,7 +12,7 @@ interface AuthProps {
 }
 
 const TOKEN_KEY = "TOKEN";
-export const API_URL = "https://hiponova-server.vercel.app";
+export const API_URL = "https://biogas-server.vercel.app";
 const AuthContext = createContext<AuthProps>({});
 
 export const useAuth = () => {
@@ -82,7 +82,6 @@ export const AuthProvider = ({ children }: any) => {
 	});
 
 	const register = async (name: string, email: string, password: string) => {
-		console.log("registering");
 		return await axios.post(`${API_URL}/api/auth/register`, {
 			name,
 			email,
