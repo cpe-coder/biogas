@@ -74,7 +74,7 @@ export default function SignUp() {
 		router.push("/sign-in");
 	};
 	return (
-		<SafeAreaView className="bg-background h-full">
+		<SafeAreaView className="bg-[#060e1f] h-full">
 			<ScrollView>
 				<View
 					className="w-full flex justify-center h-full px-4"

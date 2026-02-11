@@ -17,7 +17,7 @@ export default function Welcome() {
 	}, [router]);
 
 	return (
-		<View className="flex-1 items-center justify-center px-8 bg-primary">
+		<View className="flex-1 items-center justify-center px-8 bg-[#060e1f]">
 			<View className="flex flex-col justify-center items-center rounded-full">
 				<Image
 					className="w-[150px] h-[150px]"

@@ -21,11 +21,11 @@ export default function TabLayout() {
 			screenOptions={{
 				headerShadowVisible: false,
 				tabBarStyle: {
-					backgroundColor: "#fff",
+					backgroundColor: "#0d1424",
 					borderTopWidth: 0,
 				},
-				tabBarInactiveTintColor: "#374151",
-				tabBarActiveTintColor: "#1E40AF",
+				tabBarInactiveTintColor: "#fff",
+				tabBarActiveTintColor: "#3B82F6",
 			}}
 		>
 			<Tabs.Screen
@@ -33,14 +33,14 @@ export default function TabLayout() {
 				options={{
 					title: "Home",
 					headerStyle: {
-						backgroundColor: "#fff",
+						backgroundColor: "#0d1424",
 					},
-					headerTintColor: "#1E40AF",
+					headerTintColor: "#fff",
 					tabBarIcon: ({ focused }) => (
 						<FontAwesome6
 							name="house"
 							size={24}
-							color={focused ? "#1E40AF" : "#374151"}
+							color={focused ? "#3B82F6" : "#fff"}
 							focusable={focused}
 						/>
 					),
@@ -52,13 +52,13 @@ export default function TabLayout() {
 				options={{
 					title: "Logs",
 
-					headerStyle: { backgroundColor: "60A5FA" },
-					headerTintColor: "#1E40AF",
+					headerStyle: { backgroundColor: "#0d1424" },
+					headerTintColor: "#fff",
 					tabBarIcon: ({ focused }) => (
 						<MaterialIcons
 							name="article"
 							size={28}
-							color={focused ? "#1E40AF" : "#374151"}
+							color={focused ? "#3B82F6" : "#fff"}
 							focusable={focused}
 						/>
 					),
@@ -69,13 +69,13 @@ export default function TabLayout() {
 				options={{
 					title: "Settings",
 
-					headerStyle: { backgroundColor: "#fff" },
-					headerTintColor: "#1E40AF",
+					headerStyle: { backgroundColor: "#0d1424" },
+					headerTintColor: "#fff",
 					tabBarIcon: ({ focused }) => (
 						<MaterialIcons
 							name="settings"
 							size={28}
-							color={focused ? "#1E40AF" : "#374151"}
+							color={focused ? "#3B82F6" : "#fff"}
 							focusable={focused}
 						/>
 					),
